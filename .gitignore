@@ -1,0 +1,62 @@
+# ==========================================
+# Byte-compiled / optimized / DLL files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==========================================
+# Environments & Virtual Envs (Keep these local)
+# ==========================================
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# ==========================================
+# Gen AI / LLM Specifics (CRITICAL)
+# ==========================================
+# NEVER commit your API keys (OpenAI, Anthropic, HuggingFace, etc.)
+.env.local
+.env.*.local
+.env.production
+*.env
+
+# Local LLM weights, checkpoints, and large datasets
+# (Don't choke GitHub with multi-gigabyte model files)
+*.bin
+*.pth
+*.pt
+*.ckpt
+*.gguf
+*.safetensors
+models/
+weights/
+data/
+dataset/
+
+# Vector Database local storage (e.g., ChromaDB, FAISS)
+.chroma/
+faiss_index/
+vector_db/
+
+# ==========================================
+# IDEs, Notebooks, and OS junk
+# ==========================================
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# ==========================================
+# Logs and Outputs
+# ==========================================
+logs/
+*.log
+output/
+generations/
